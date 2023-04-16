@@ -1,0 +1,119 @@
+.title {
+  &_shadow {
+    position: relative;
+    z-index: 1;
+    color: #e86763;
+    text-shadow: #383737 1px 0px, #383737 1px 1px, #383737 0px 1px,
+      #383737 -1px 1px, #383737 -1px 0px, #383737 -1px -1px, #383737 0px -1px,
+      #383737 1px -1px;
+    letter-spacing: 0.8px;
+
+    @media (max-width: 767px) {
+      letter-spacing: -0.5px;
+    }
+
+    span {
+      display: inline-block;
+      color: transparent;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      text-shadow: -3px 2.5px 0px #383737; // -3px 2.5px 0px #383737
+      letter-spacing: 0.8px;
+      @media (max-width: 767px) {
+        text-shadow: -2px 1.5px 0px #383737;
+        letter-spacing: -0.5px;
+      }
+    }
+  }
+
+  &_lg {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 80px;
+    text-transform: uppercase;
+    // color: #383737;
+    color: #1f1f1f;
+
+    @media (max-width: 992px) {
+      font-size: 22px;
+      line-height: 21px;
+    }
+  }
+
+  &_md {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 140%;
+
+    @media (max-width: 1200px) {
+      font-size: 50px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 28px;
+      line-height: 140%;
+    }
+  }
+
+  &_sm {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 46px;
+
+    @media (max-width: 992px) {
+      font-weight: 900;
+      font-size: 22px;
+      line-height: 21px;
+    }
+  }
+
+  &_extrasm,
+  &_xs {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+
+    @media (max-width: 992px) {
+      font-size: 18px;
+      line-height: 17px;
+    }
+  }
+}
+
+.text {
+  font-size: 22px;
+  line-height: 130%;
+  color: #383737;
+
+  @media (max-width: 992px) {
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  &_gray {
+    color: #797979;
+  }
+
+  &_md {
+    font-size: 18px;
+    line-height: 140%;
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+
+  &_20 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  &_sm {
+    font-size: 16px;
+    line-height: 130%;
+  }
+}

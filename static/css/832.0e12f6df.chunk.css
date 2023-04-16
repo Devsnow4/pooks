@@ -1,0 +1,103 @@
+.SaleModal_modal__gt9Vl {
+    left: 50%;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(.8);
+    transform: translate(-50%, -50%) scale(.8);
+    transition: all .4s ease;
+    visibility: hidden;
+    width: 100%;
+    z-index: 10
+}
+
+.SaleModal_modal__gt9Vl.SaleModal__active__cfb-w {
+    opacity: 1;
+    pointer-events: inherit;
+    -webkit-transform: scale(1) translate(-50%, -50%);
+    transform: scale(1) translate(-50%, -50%);
+    visibility: visible
+}
+
+.SaleModal_modal__gt9Vl.SaleModal__closed__ghakm {
+    z-index: 10
+}
+
+.SaleModal_modalBody__-l2pm {
+    background: #f6eed7;
+    border: 2px solid #383737;
+    border-radius: 60px;
+    box-shadow: 4px 8px 0 #383737;
+    margin: 0 auto;
+    max-width: 930px;
+    overflow: hidden;
+    padding: 0 0 40.313%;
+    position: relative
+}
+
+@media(max-width:1320px) {
+    .SaleModal_modalBody__-l2pm {
+        padding: 0 0 50%
+    }
+}
+
+@media(max-width:991px) {
+    .SaleModal_modalBody__-l2pm {
+        padding: 0 0 55%
+    }
+}
+
+@media(max-width:767px) {
+    .SaleModal_modalBody__-l2pm {
+        border: .688172px solid #383737;
+        border-radius: 20px;
+        box-shadow: 1.37634px 2.75269px 0 #383737
+    }
+}
+
+.SaleModal_modalBody__img__acqEA {
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.SaleModal_modalBody__img__acqEA img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%
+}
+
+.SaleModal_modalBody__close__btlyp {
+    cursor: pointer;
+    height: 25px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    transition: all .3s ease;
+    width: 25px;
+    z-index: 1
+}
+
+@media(max-width:767px) {
+    .SaleModal_modalBody__close__btlyp {
+        height: 10px;
+        right: 15px;
+        top: 15px;
+        width: 10px
+    }
+}
+
+.SaleModal_modalBody__close__btlyp:hover {
+    opacity: .8
+}
+
+.SaleModal_modalBody__close__btlyp svg {
+    height: 100%;
+    width: 100%
+}
+
+/*# sourceMappingURL=832.0e12f6df.chunk.css.map*/

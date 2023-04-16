@@ -1,0 +1,51 @@
+.ticker {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #25284c;
+  overflow: hidden;
+  background: #E86763;
+  height: 56px;
+
+  @media (max-width:991px) {
+    height: 36px;
+  }
+
+  @media (max-width:767px) {
+    z-index: 11;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #F8D558;
+    white-space: nowrap;
+    display: inline-flex;
+    margin: 0 0 0 20px;
+
+    svg {
+      width: 40px;
+      height: 40px;
+      margin: 0 0 0 20px;
+    }
+
+    @media (max-width:991px) {
+      font-size: 18px;
+      line-height: 17px;
+      margin: 0 0 0 10px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+._team-slider {
+  .swiper-slide {
+    overflow: visible !important;
+
+    -webkit-transform: translateZ(0);
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+  }
+  .swiper-slide-shadow {
+    opacity: 0 !important;
+    background: none !important;
+  }
+}

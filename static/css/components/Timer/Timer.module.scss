@@ -1,0 +1,119 @@
+.timer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  top: 86px;
+  transform: translate(0, calc(100% + 2px));
+  background: #e86763;
+  transition: all 0.3s ease;
+
+  &.sticky {
+    transform: translate(0);
+  }
+
+  @media (max-width: 1200px) {
+    top: 80px;
+  }
+  @media (max-width: 991px) {
+    top: 60px;
+  }
+  @media (max-width: 767px) {
+    top: -1px;
+    transform: translate(0, calc(100% + 1px));
+  }
+  @media (max-width: 360px) {
+    top: -11px;
+  }
+
+  &Body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+
+    .countdown {
+      display: inline-block;
+    }
+
+    @media (max-width: 991px) {
+      height: 36px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    @media (max-width: 767px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      height: auto;
+      padding: 12px 0;
+
+      svg {
+        position: absolute;
+        &:first-child {
+          left: 4px;
+        }
+        &:last-child {
+          right: 4px;
+        }
+      }
+
+      .countdown {
+        display: flex;
+        justify-content: center;
+        margin: 4px 0 0;
+      }
+    }
+
+    span {
+      margin: 0 20px;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: #f8d558;
+      text-align: center;
+
+      @media (max-width: 991px) {
+        font-size: 18px;
+        line-height: 17px;
+        margin: 0 15px;
+      }
+      @media (max-width: 400px) {
+        // margin: 0;
+      }
+    }
+
+    a {
+      position: absolute;
+      top: 50%;
+      right: 140px;
+      transform: translate(0, -50%);
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 17px;
+      text-decoration-line: underline;
+      color: #f8d558;
+
+      @media (max-width: 1200px) {
+        right: 15px;
+      }
+      @media (max-width: 767px) {
+        margin: 8px 0 0;
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: translate(0);
+        flex: 1 1 100%;
+        text-align: center;
+      }
+
+      &:hover {
+        text-decoration-line: none;
+      }
+    }
+  }
+}
